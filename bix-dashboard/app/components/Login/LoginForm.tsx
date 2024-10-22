@@ -1,4 +1,3 @@
-// app/components/Login/LoginForm.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -40,7 +39,7 @@ const LoginForm: React.FC = () => {
       localStorage.setItem('isAuthenticated', 'true');
       router.push('/dashboard');
     } else {
-      setError('Invalid credentials');
+      setError('Usuário ou senha inválidos');
     }
   };
 
@@ -49,14 +48,14 @@ const LoginForm: React.FC = () => {
       <StyledForm onSubmit={handleSubmit}>
         <h2>Login</h2>
         <TextField
-          label="Username"
+          label="Usuário"
           variant="outlined"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
         <TextField
-          label="Password"
+          label="Senha"
           type="password"
           variant="outlined"
           value={password}

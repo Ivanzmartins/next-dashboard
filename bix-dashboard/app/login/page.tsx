@@ -1,5 +1,6 @@
-import LoginForm from '@/app/components/Login/LoginForm';
+
 import React from 'react';
+import LoginForm from '../components/Login/LoginForm';
 
 const LoginPage = () => {
   return (
